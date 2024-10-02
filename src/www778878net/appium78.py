@@ -58,10 +58,10 @@ class Appium78:
 
         await asyncio.sleep(2)
 
-    def find_elements(self, by):
+    def find_elements(self, by, value):
         if not self.driver:
             return []
-        return self.driver.find_elements(by)
+        return self.driver.find_elements(by, value)
 
     def click_element(self, element):
         element.click()
